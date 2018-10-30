@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import logo from "../../../logo.svg";
 
 const divStyle = {
+  width: "30%",
   padding: "0.5%"
 };
 
@@ -16,10 +17,12 @@ Header.defaultProps = {
   name: ""
 };
 
+Header.divStyle = divStyle;
+
 function Header() {
   return (
     <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
+      {/*<img src={logo} className="App-logo" alt="logo" />*/}
     </header>
   );
 }

@@ -11,6 +11,7 @@ import Button from "./components/controls/Button/Button";
 import Input from "./components/controls/Input/Input";
 import Header from "./components/widgets/Header/";
 import Footer from "./components/widgets/Footer/";
+import Counter from "./components/widgets/Counter/Counter";
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
         <div>
           <Button />
           <Input />
+          <Counter/>
         </div>
         <Provider store={store}>
           <BrowserRouter>

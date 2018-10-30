@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const divStyle = {
-  padding: "0.5%"
+  padding: "0.5%",
+  color: "red",
+  display: "inline-block"
 };
 
 Footer.displayName = "Footer";
@@ -15,9 +17,11 @@ Footer.defaultProps = {
   name: ""
 };
 
+Footer.divStyle = divStyle;
+
 function Footer() {
   return (
-    <footer className="App-footer">
+    <footer className="App-footer" style={divStyle}>
       <a
         className="App-link"
         href="https://reactjs.org"
@@ -26,6 +30,7 @@ function Footer() {
       >
         Learn React
       </a>
+      <p>Footer</p>
     </footer>
   );
 }

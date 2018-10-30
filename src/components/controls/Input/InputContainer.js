@@ -1,7 +1,7 @@
 import { withHandlers, setDisplayName, compose, withState } from "recompose";
 import Input from "./Input";
 
-const InputNumber = compose(
+const InputCount = compose(
   setDisplayName("InputNumber"),
   withState("value", "setValue", ""),
   withHandlers({
@@ -23,4 +23,4 @@ const InputText = compose(
   })
 )(Input);
 
-export { InputText, InputNumber };
+export { InputText, InputCount };
