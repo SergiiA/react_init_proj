@@ -10,6 +10,7 @@ import Catalog from "./components/pages/Catalog/Catalog";
 import Button from "./components/controls/Button/Button";
 import Input from "./components/controls/Input/Input";
 import Header from "./components/widgets/Header/";
+import Footer from "./components/widgets/Footer/";
 
 class App extends Component {
   render() {
@@ -29,6 +30,9 @@ class App extends Component {
           </BrowserRouter>
         </Provider>
         <Header />
+        <div>
+          <Footer />
+        </div>
       </div>
     );
   }
