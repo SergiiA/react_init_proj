@@ -2,11 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import logo from "../../../logo.svg";
 
-const divStyle = {
-  width: "30%",
-  padding: "0.5%"
-};
-
 Header.displayName = "Header";
 
 Header.propTypes = {
@@ -16,8 +11,6 @@ Header.propTypes = {
 Header.defaultProps = {
   name: ""
 };
-
-Header.divStyle = divStyle;
 
 function Header() {
   return (

@@ -17,10 +17,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header />
         <div>
           <Button />
           <Input />
-          <Counter/>
+          <Counter />
         </div>
         <Provider store={store}>
           <BrowserRouter>
@@ -31,7 +32,7 @@ class App extends Component {
             </Switch>
           </BrowserRouter>
         </Provider>
-        <Header />
+
         <div>
           <Footer />
         </div>
