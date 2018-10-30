@@ -7,7 +7,7 @@ const displayName = "Catalog";
 function Catalog() {
   return (
     <DefaultLayout name="Catalog">
-      <Products />
+     {/* <Products />*/}
     </DefaultLayout>
   );
 }
