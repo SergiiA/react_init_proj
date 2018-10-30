@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Product from '../Product';
+//import Product from '../Product';
 import ProductsStyled from './ProductsStyled';
 
 const displayName = 'Products';
@@ -20,7 +20,7 @@ function Products({ fetchedProducts, selectProductsHandler }) {
   return (
     <ProductsStyled>
       {fetchedProducts.map(fetchedProduct => (
-        <Product key={fetchedProduct.name} {...fetchedProduct} selectProductsHandler={selectProductsHandler} />
+        {/*<Product key={fetchedProduct.name} {...fetchedProduct} selectProductsHandler={selectProductsHandler} />*/}
       ))}
     </ProductsStyled>
   );

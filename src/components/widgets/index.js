@@ -1,7 +1,7 @@
-//import Header from './Header';
+import Header from '../widgets/Header';
 //import Footer from './Footer';
-import Products from '../widgets/';
+import Products from '../widgets/Products';
 //import Counter from './Counter';
 //import CartBox from './CartBox';
 
-export default Products;
+export { Products, Header };
