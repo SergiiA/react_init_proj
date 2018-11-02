@@ -1,19 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from 'components/controls';
+import { Button } from '../../controls';
 
 const displayName = 'Product';
 
 const propTypes = {
   name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
   removeHandler: PropTypes.func.isRequired,
 };
 
-function Product({ name, removeHandler }) {
+function Product({ name, price, removeHandler }) {
   return (
-    <div>
+    <div style={{width:"80px", backgroundColor:"grey", padding:"10px", display:"inline-block"}}>
       {name}
       {' - '}
+      <p>Price {price}"$"</p>
       <Button text="Remove" onClick={removeHandler} value="removeProduct" />
     </div>
   );
