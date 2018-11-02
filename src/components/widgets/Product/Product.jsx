@@ -12,7 +12,7 @@ const propTypes = {
 
 function Product({ name, price, removeHandler }) {
   return (
-    <div style={{width:"80px", backgroundColor:"grey", padding:"10px", display:"inline-block"}}>
+    <div style={{width:"80px", backgroundColor:"grey", padding:"10px", flexWrap:"wrap"}}>
       {name}
       {' - '}
       <p>Price {price}"$"</p>

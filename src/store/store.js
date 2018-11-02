@@ -3,7 +3,7 @@ import { combineReducers } from "redux-immutable";
 import promiseMiddleware from "redux-promise-middleware";
 import thunkMiddleware from "redux-thunk";
 import selectedProducts from "../reducers/selectedProducts";
-import products from "../reducers/products";
+import fetchedProducts from "../reducers/fetchedProducts";
 
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -12,7 +12,7 @@ const enhancer = composeEnhancers(
 );
 
 const store = createStore(
-  combineReducers({ selectedProducts, products }),
+  combineReducers({ selectedProducts, fetchedProducts }),
   enhancer
 );
 
