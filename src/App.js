@@ -12,6 +12,7 @@ import Input from "./components/controls/Input/Input";
 import Header from "./components/widgets/Header/";
 import Footer from "./components/widgets/Footer/";
 import Counter from "./components/widgets/Counter/Counter";
+import Product from "./components/widgets/Footer/";
 
 class App extends Component {
   render() {
@@ -22,6 +23,8 @@ class App extends Component {
           <Button />
           <Input />
           <Counter />
+          <Counter />
+          <Product name="Name"/>
         </div>
         <Provider store={store}>
           <BrowserRouter>
